@@ -1,0 +1,46 @@
+body {
+	background-color: #d2d2d2;
+	font-family: Roboto, Times, Serif;
+	height: 100%;
+	background-image: url("http://monicadenevan.com/wp-content/themes/monica/images/MD_background.jpg");
+}
+
+#MyInfo {
+	float: left;
+	text-align: left;
+	font-size: 1.5em;
+	padding-left: 5%
+}
+
+#ContactInfo {
+	padding-left: 50px;
+}
+
+#Email {
+	text-decoration: none;
+}
+
+#Content {
+	padding-left: 30%;
+	padding-right: 25%;
+	font-size: 1.5em;
+}
+
+#Employer {
+	font-size: 1.5em;
+	font-style: bold;
+}
+
+#ExpTime {
+	font-size: .75em;
+	font-style: italic;
+}
+
+#ExpAccomp {
+	font-style: bold;
+}
+
+div h2 {
+	color: #990000;
+	font-size: 2em;
+}
