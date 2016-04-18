@@ -6,15 +6,15 @@ html, body, h1, h2, h3, h4, p, ol, ul, li, a {
 
 body {
 	font-family: Roboto, Times, Serif;
-	/*background: #d2d2d2 url("http://monicadenevan.com/wp-content/themes/monica/images/MD_background.jpg") top left repeat;*/
 	background: #d2d2d2 url(Images/background.jpg) repeat top left;
 }
 
 header {
 	float: left;
 	display: inline-block;
-	margin: 30px;
+	margin: 2vw;
 	text-align: center;
+	width: 20vw;
 }
 
 header h1 {
@@ -22,12 +22,28 @@ header h1 {
 	font-size:3em;
 }
 
+section h2 {
+	padding-top: 1em;
+}
+
+section h2:first-child {
+	padding-top: 0em;
+}
+
 header p {
 	font-size: 1.5em;
 }
 
 header figure {
-	padding-top: 30px;
+	padding-top: 2em;
+}
+
+header img {
+	height:375px;
+	width:320px;
+	vertical-align: middle;
+	border: 3px solid black;
+	margin-bottom: .5em;
 }
 
 header figcaption {
@@ -36,27 +52,29 @@ header figcaption {
 
 section {
 	background: #d2d2d2 url(Images/background2.jpg) repeat top left;
+	max-height: 75vh;
+	overflow: auto;
 }
 
 section ul {
 	list-style-type: square;
-	margin-left: 30px;
+	margin-left: 1.5vw;
 }
 
-.contentBody {
+main {
 	display: inline-block;
 	clear: left;
-	margin: 30px;
+	margin: 1.5vw;
 	width: 50%;
 }
 
-.contentBody section {
-	padding: 30px;
+main section {
+	padding: 1.5vw;
 	box-shadow: -5px 5px 20px #000;
 	border: 2px solid #900;
 }
 
-.contentBody p {
+main p {
 	text-indent: 50px;
 }
 
@@ -70,7 +88,7 @@ nav ul li {
 	display: inline;
 	margin-right: 5px;
 	border-radius: 20px 20px 0% 0%;
-	background-color: #902020;
+	background-color: #904040;
 	padding-left: 10px;
 	padding-top: 5px;
 	padding-right: 10px;
@@ -87,32 +105,36 @@ nav ul li a {
 	color: #fff;
 }
 
-.currentTab {
-	box-shadow: -5px 0px 10px #000;
-	background-color: #900;
-	margin-right: 0px;
-	font-size: 1.1em;
-}
-
-.contentBody h1 {
+main h1 {
 	color: #900;
 	font-size: 3em;
 	text-align: left;
 }
 
-.contentBody h2 {
+main h2 {
 	font-size: 1.5em;
 	font-style: bold;
 }
 
-.contentBody h3 {
+main h3 {
 	font-size: .75em;
 	font-style: italic;
 }
 
-.contentBody h4 {
+main h4 {
 	font-style: bold;
 	padding-top: 1em;
+}
+
+.email {
+	text-decoration: none;
+}
+
+.currentTab {
+	box-shadow: -5px 0px 10px #000;
+	background-color: #900;
+	margin-right: 0px;
+	font-size: 1.1em;
 }
 
 .sectionContent {
@@ -123,22 +145,10 @@ nav ul li a {
 	font-size: 2em;
 }
 
-.email {
-	text-decoration: none;
-}
-
 #summaryDiv {
 	display: block;
 }
 
-#experienceDiv {
-	display: none;
-}
-
-#skillsDiv {
-	display: none;
-}
-
-#portfolioDiv {
+#experienceDiv, #portfolioDiv, #skillsDiv {
 	display: none;
 }
