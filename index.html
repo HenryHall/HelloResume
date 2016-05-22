@@ -6,36 +6,36 @@
 		<title>Henry Hall's Resume</title>
 		<link type="text/css"; rel="stylesheet"; href="StyleSheet.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700,900' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 		<script src="Script.js"></script>
 	</head>
 
 	<body>
 		
-		<header>
-			<div>
-				<h1>Henry Hall</h1>
-				<p>
+		<header id="mugShot">
+			<h1>Henry Hall</h1>
+			
+			<figure>
+				<img src="Images/MugShot.png" alt="The handsome Mr. Henry Hall">
+
+			</figure>
+
+			<p id="drake"><b>"</b><i>Started from the bottom now we here</i><b>"</b><br>-Drake</p>
+			<p id="details">
 					2420 1st Avenue South<br>
 					Apartment 2<br>
 					Minneapolis, MN 55404<br>
 					952 797 3204<br>
 					<a class="email" href="mailto:Henry.Hall@mac.com">Henry.Hall@mac.com</a>
-				</p>
-			</div>
-
-			<figure>
-				<img src="Images/MugShot.png" alt="The handsome Mr. Henry Hall">
-				<figcaption><b>"</b><i>Started from the bottom now we here</i><b>"</b><br>-Drake</figcaption>
-			</figure>
+			</p>
 		</header>
 
-		<div style="height: 100vh; width: 1vw; background-color: #900; display: inline-block; float: left; margin-right: 30px;">
 		</div>
 
-		<main>
+		<main id="main">
 
 			<nav>
-				<ul class="nav">
+				<ul id="nav">
 					<li id="summary" class="currentTab"><a href="javascript:unhide('summaryDiv', 'experienceDiv', 'skillsDiv', 'portfolioDiv')">Summary</a></li>
 					<li id="experience"><a href="javascript:unhide('experienceDiv', 'summaryDiv', 'skillsDiv', 'portfolioDiv')">Experience</a></li>
 					<li id="education"><a href="javascript:unhide('skillsDiv', 'summaryDiv', 'experienceDiv', 'portfolioDiv')">Education and Skills</a></li>
